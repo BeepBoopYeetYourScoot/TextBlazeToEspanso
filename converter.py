@@ -80,12 +80,14 @@ class TextBlazeToEspansoConverter:
             f"Saved {filename} to {self.snippets_matches_directory}"
         )
 
-    def _format_trigger(self, snippet):
+    def _format_trigger(self, snippet, replacer="\\"):
         """
         I substitute the original symbol bc the escape symbol it typed in a
         single click on any keyboard layout. I prefer it to espanso's default
         """
-        return f"{snippet.get(self.snippet_shortcut_key)}".replace("/", "\\")
+        return f"{snippet.get(self.snippet_shortcut_key)}".replace(
+            "/", replacer
+        )
 
     @staticmethod
     def _snake_cased(string, regex="([A-Z][a-z]+)", replacement=r"_\1"):
