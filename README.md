@@ -21,7 +21,9 @@ matter the keyboard layout.
 ### Requisites
 - Python 3.X (the package is written using 3.12 so there might be package conflicts on the lower versions)
 - pip
+
 ---
+
 ### Installation
 - `pip install textblaze-to-espanso`
 
@@ -46,7 +48,7 @@ matter the keyboard layout.
 
 ### Usage
 
-1. Configure paths in environment
+1. Configure paths in your environment
 2. Execute the package: `python -m textblaze_to_espanso --env-file=$ENV_FILE_PATH`
 3. Locate the matches inside the configured directory
-4. Try to use your snippets. They should work in all environments from the get-go. You may need to reload Espanso
+4. Try to use your snippets. They should work in all environments from the get-go. You might need to reload Espanso
