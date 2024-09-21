@@ -11,9 +11,7 @@ matter the keyboard layout.
 - pip
 
 ### Installation
-- `git clone https://github.com/makeyouswag/TextBlazeToEspanso.git`
-- `python -m venv venv`
-- `pip install -r requirements.txt`
+- `pip install textblaze-to-espanso`
 
 ### Environment variables
 - `TEXTBLAZE_EXPORT_JSON_PATH`: path to TextBlaze export json
@@ -30,6 +28,6 @@ matter the keyboard layout.
 ### Usage
 
 1. Configure paths in environment
-2. Execute `converter.py` as a script: `python converter.py`
+2. Execute the package: `python -m textblaze_to_espanso --env-file=$ENV_FILE_PATH`
 3. Locate the matches inside the configured directory
 4. Try to use your snippets. They should work in all environments from the get-go. You may need to reload Espanso
