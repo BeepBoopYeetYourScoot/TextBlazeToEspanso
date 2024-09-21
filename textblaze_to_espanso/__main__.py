@@ -25,6 +25,6 @@ def parse_arguments():
 
 if __name__ == "__main__":
     parse_arguments()
-    from textblaze_to_espanso import TextBlazeToEspansoConverter
+    from textblaze_to_espanso.converter import TextBlazeToEspansoConverter
 
     TextBlazeToEspansoConverter().convert()
