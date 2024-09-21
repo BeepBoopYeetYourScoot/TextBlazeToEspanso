@@ -79,7 +79,3 @@ class TextBlazeToEspansoConverter:
     @staticmethod
     def _snake_cased(string, regex="([A-Z][a-z]+)", replacement=r"_\1"):
         return re.sub(regex, replacement, string).replace(" ", "_").lower()
-
-
-if __name__ == "__main__":
-    TextBlazeToEspansoConverter().convert()
