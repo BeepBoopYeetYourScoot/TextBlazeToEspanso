@@ -1,7 +1,7 @@
-A simple script to convert TextBlaze snippets to Espanso matches.
+TextBlaze to Espanso migration script.
 
 Oriented for the conversion of the whole TextBlaze repository at once using the "Export all folders" button in the
-settings. Will work just as fine with a single folder.
+settings. Will work just as fine with a single folder. Support of images is not tested.
 
 I use `\` as a shortcut initiator because I think it is more convenient to access the shortcuts in a single button no
 matter the keyboard layout.
