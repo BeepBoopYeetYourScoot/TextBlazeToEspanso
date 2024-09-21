@@ -16,9 +16,13 @@ class ConverterSettings:
         "SNIPPETS_DIRECTORY_NAME", pathlib.Path("test_version")
     )
     assert isinstance(
-        textblaze_export_json_path, (pathlib.Path, os.PathLike, str)
-    )
-    assert isinstance(espanso_matches_path, (pathlib.Path, os.PathLike, str))
+        textblaze_export_json_path,
+        (pathlib.Path, os.PathLike, str),
+    ), type(textblaze_export_json_path)
+    assert isinstance(
+        espanso_matches_path,
+        (pathlib.Path, os.PathLike, str),
+    ), type(espanso_matches_path)
     snippets_matches_directory = espanso_matches_path / snippets_directory_name
     folders_key = os.environ.get("FOLDERS_KEY", "folders")
     folder_name_key = os.environ.get("FOLDER_NAME_KEY", "name")

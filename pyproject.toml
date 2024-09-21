@@ -2,6 +2,14 @@
 requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
+[project]
+name = "textblaze_to_espanso"
+version = "0.1.7"
+authors = [
+    { name = "makeyouswag" },
+]
+readme = "README.md"
+requires-python = ">=3.8"
 dependencies = [
     "black==24.8.0",
     "build==1.2.2",
@@ -44,15 +52,6 @@ dependencies = [
     "urllib3==2.2.3",
     "zipp==3.20.2",
 ]
-
-[project]
-name = "textblaze_to_espanso"
-version = "0.1.2"
-authors = [
-    { name = "makeyouswag" },
-]
-readme = "README.md"
-requires-python = ">=3.8"
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
@@ -64,3 +63,4 @@ packages = ["textblaze_to_espanso"]
 [project.urls]
 Homepage = "https://github.com/makeyouswag/TextBlazeToEspanso/"
 Issues = "https://github.com/makeyouswag/TextBlazeToEspanso/issues"
+

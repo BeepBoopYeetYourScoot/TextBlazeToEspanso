@@ -5,7 +5,7 @@ import re
 import loguru
 from ruamel.yaml import YAML
 
-from settings import ConverterSettings
+from .settings import ConverterSettings
 
 
 class TextBlazeToEspansoConverter:
@@ -22,7 +22,7 @@ class TextBlazeToEspansoConverter:
 
     def convert(self):
         loguru.logger.debug(
-            f"Creating " f"{self.settings.snippets_matches_directory}"
+            f"Creating {self.settings.snippets_matches_directory}"
         )
         self.settings.snippets_matches_directory.mkdir(
             parents=True, exist_ok=True
