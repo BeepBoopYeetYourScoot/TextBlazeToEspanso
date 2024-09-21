@@ -5,7 +5,9 @@ TextBlaze settings to export the snippets. Will work just as fine with a single 
 
 I use `\` as a shortcut initiator because I think it is more convenient to access the shortcuts in a single button no
 matter the keyboard layout.
+
 ---
+
 ## Contents
 - [Requisites](#Requisites)
 - [Installation](#Installation)
@@ -13,14 +15,18 @@ matter the keyboard layout.
   - [Required](#required)
   - [Optional](#optional)
 - [Usage](#Usage)
+
 ---
+
 ### Requisites
 - Python 3.X (the package is written using 3.12 so there might be package conflicts on the lower versions)
 - pip
 ---
 ### Installation
 - `pip install textblaze-to-espanso`
+
 ---
+
 ### Environment variables
 #### Required
 - `TEXTBLAZE_EXPORT_JSON_PATH`: path to TextBlaze export json
@@ -35,7 +41,9 @@ matter the keyboard layout.
 - `SNIPPET_SHORTCUT_KEY="shortcut"`: TextBlaze shortcut json key
 - `SNIPPET_TEXT_KEY="text" `: TextBlaze text snippet json key
 - `ESPANSO_FILE_EXTENSION=".yml"`: Espanso configuration file extension
+
 ---
+
 ### Usage
 
 1. Configure paths in environment
